@@ -124,7 +124,7 @@ public class Main {
                 "ID", "ITEM", "PRICE");
 
         for (MenuItem item : menu) {
-            System.out.printf("%-5d %-20s ₹%.2f%n",
+            System.out.printf("%-5d %-20s Rs.%.2f%n",
                     item.id, item.name, item.price);
         }
     }
@@ -224,7 +224,7 @@ public class Main {
 
             double total = billItem.getTotal();
 
-            System.out.printf("%-5d %-18s %-10d ₹%.2f%n",
+            System.out.printf("%-5d %-18s %-10d Rs.%.2f%n",
                     billItem.item.id,
                     billItem.item.name,
                     billItem.quantity,
@@ -234,7 +234,7 @@ public class Main {
         }
 
         System.out.println("----------------------------------------");
-        System.out.printf("Subtotal: ₹%.2f%n", subtotal);
+        System.out.printf("Subtotal: Rs.%.2f%n", subtotal);
     }
 
     // Add new menu item
@@ -324,7 +324,7 @@ public class Main {
 
             double total = billItem.getTotal();
 
-            System.out.printf("%-5d %-18s %-8d ₹%.2f%n",
+            System.out.printf("%-5d %-18s %-8d Rs.%.2f%n",
                     billItem.item.id,
                     billItem.item.name,
                     billItem.quantity,
@@ -338,10 +338,10 @@ public class Main {
 
         System.out.println("----------------------------------------------");
 
-        System.out.printf("Subtotal       : ₹%.2f%n", subtotal);
-        System.out.printf("GST (%.0f%%)       : ₹%.2f%n",
+        System.out.printf("Subtotal       : Rs.%.2f%n", subtotal);
+        System.out.printf("GST (%.0f%%)       : Rs.%.2f%n",
                 GST, gstAmount);
-        System.out.printf("Grand Total    : ₹%.2f%n",
+        System.out.printf("Grand Total    : Rs.%.2f%n",
                 grandTotal);
 
         System.out.println("==============================================");
